@@ -1,0 +1,34 @@
+@use "@/assets/styles/variables.scss" as *;
+
+.heading {
+	font-size: 2rem;
+	color: $bPrimaryColor;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.gift-item {
+	padding: 1rem !important;
+}
+
+.note {
+	color: $bTertiaryColor;
+	font-size: 1rem;
+	padding-left: 1rem;
+
+	&-heading {
+		color: $bSecondaryColor;
+		font-size: 1.4rem;
+		font-weight: bold;
+	}
+
+	&-list {
+		margin: 0.5rem 0;
+		list-style-type: disc;
+		padding-left: 1.2rem;
+	}
+
+	&-label {
+		margin-top: 1rem;
+	}
+}

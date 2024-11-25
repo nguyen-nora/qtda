@@ -1,0 +1,93 @@
+@use "@/assets/styles/variables.scss" as *;
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.label {
+	margin-bottom: 0.2rem;
+	padding-left: 1.6rem;
+	text-align: left;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.required-sign {
+	color: orangered;
+}
+
+.input-wrapper {
+	position: relative;
+}
+
+.icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	z-index: 3;
+	top: 50%;
+	left: 1.3rem;
+	transform: translateY(-50%);
+	color: white;
+}
+
+.input {
+	width: 100%;
+	display: block;
+	position: relative;
+	z-index: 1;
+	border: 6px solid rgba(255, 255, 255, 0.45);
+	border-radius: 50px;
+	padding: 1em 3em 1em;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-clip: padding-box;
+	color: #fff;
+	background-image: linear-gradient(90deg, $gradientColorD0, $gradientColorD1);
+	caret-color: $bPrimaryColor;
+	transition: all ease 0.2s;
+
+	&::placeholder {
+		color: #ffffff;
+	}
+
+	&::before {
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: -1;
+		top: 5px;
+		left: 5px;
+		border-radius: 50px;
+		filter: blur(14px);
+	}
+
+	&::after {
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: -1;
+		top: 5px;
+		right: 5px;
+		border-radius: 50px;
+		filter: blur(14px);
+	}
+
+	&.primary {
+		background-image: linear-gradient(90deg, $gradientColorP0, $gradientColorP1);
+	}
+
+	&.secondary {
+		background-image: linear-gradient(90deg, $gradientColorS0, $gradientColorS1);
+	}
+
+	&.invalid {
+		border-color: rgba(255, 85, 85, 0.6);
+	}
+}

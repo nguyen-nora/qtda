@@ -1,0 +1,57 @@
+@use "@/assets/styles/variables.scss" as *;
+
+.heading {
+	font-size: 0.8rem;
+	color: $bPrimaryColor;
+}
+
+.rewards {
+	margin-top: 0.5rem;
+	display: flex;
+	align-items: center;
+}
+
+.reward-data {
+	margin-right: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.reward-icon {
+	display: inline-block;
+	margin-right: 0.6rem;
+	width: 20px;
+}
+
+.reward-value {
+	font-size: 1rem;
+	color: $bTertiaryColor;
+	transform: translateY(1px);
+}
+
+.ads-wrapper {
+	position: relative;
+}
+
+.ads-duration {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.ads-image {
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	padding: 1rem;
+	border-radius: 0.5rem;
+}
+
+.ads-video {
+	margin: 0 auto;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	padding: 1rem;
+	border-radius: 0.5rem;
+}

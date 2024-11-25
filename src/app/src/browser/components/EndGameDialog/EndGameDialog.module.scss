@@ -1,0 +1,73 @@
+@use "@/assets/styles/variables.scss" as *;
+
+.heading {
+	font-size: 1.2rem;
+	text-align: center;
+	color: $bPrimaryColor;
+}
+
+.item-data {
+	padding: 10px 0 10px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.item-icon {
+	display: inline-block;
+	margin-right: 1rem;
+	font-size: 16px;
+	width: 56px;
+}
+
+.item-value {
+	font-size: 2.4rem;
+	color: $bTertiaryColor;
+}
+
+.level-up {
+
+	&-image {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&-icon {
+		width: 80px;
+	}
+
+	&-level {
+		font-size: 3rem;
+		margin-left: 0.5rem;
+		color: $bTertiaryColor;
+	}
+
+	&-text {
+		color: $bSecondaryColor;
+		text-align: center;
+		margin-top: 1rem;
+		font-size: 1.2rem;
+	}
+
+	&-heading {
+		color: $bPrimaryColor;
+		margin-bottom: 1.5rem;
+	}
+
+	&-item-data {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&-item-icon {
+		width: 32px;
+	}
+
+	&-item-value {
+		margin-left: 0.5rem;
+		font-size: 1.2rem;
+		color: $bTertiaryColor;
+	}
+}

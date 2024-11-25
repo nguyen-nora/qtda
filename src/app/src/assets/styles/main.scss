@@ -1,0 +1,131 @@
+@use "@/assets/styles/variables.scss" as *;
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Coiny&display=swap");
+@font-face {
+	font-family: "SVN";
+	src: url("@/assets/fonts/SVN-Berkshire Swash.ttf");
+}
+
+.App {
+	font-family: "Lexend", sans-serif;
+}
+
+body,
+div,
+aside {
+	&::-webkit-scrollbar {
+		width: 5px;
+		height: 8px;
+	}
+
+	&::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15);
+		background-color: white;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 20px;
+		background-image: linear-gradient(45deg, #a143ff 0%, #67abff 100%);
+	}
+}
+
+.card {
+	background: var(--surface-card);
+	padding: 1.4rem;
+	margin-bottom: 1.4rem;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	border-radius: 12px;
+}
+
+.background-transparent {
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.text-center {
+	text-align: center;
+}
+
+// Prime table styles
+.data-template {
+	display: flex;
+	align-items: center;
+
+	&-value {
+		margin-right: 5px;
+	}
+
+	&-icon {
+		width: 14px;
+		margin-bottom: 2px;
+	}
+}
+
+// Override Prime styles
+.p-component,
+.p-dropdown-label {
+	font-family: "Lexend", sans-serif;
+}
+
+.p-menu.p-menu-overlay {
+	min-width: max-content !important;
+}
+
+.p-dock-container {
+	position: fixed;
+	left: 0;
+}
+
+.p-dock-list {
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.p-dock-item,
+.p-dock-action {
+	cursor: pointer;
+}
+
+.p-carousel-item {
+	& > div {
+		padding-top: 1rem !important;
+	}
+}
+
+//? Devices
+
+.admin {
+	color: $textColor;
+	font-family: "Lexend", sans-serif;
+}
+
+.browser {
+	color: $bTextColor;
+}
+
+.mobile {
+	body,
+	div,
+	aside {
+		&::-webkit-scrollbar {
+			width: 3px;
+			height: 4px;
+		}
+	}
+
+	.card {
+		background: white;
+		padding: 1rem;
+		margin-bottom: 1rem;
+		box-shadow: none;
+		border-radius: 0.5rem;
+	}
+
+	color: $mTextColor;
+
+	.p-dropdown.p-component.p-inputwrapper.p-inputwrapper-filled {
+		width: 100%;
+		margin-top: 1rem;
+	}
+}

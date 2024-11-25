@@ -1,0 +1,36 @@
+@use "@/assets/styles/variables.scss" as *;
+
+.wrapper {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+.heading {
+	font-size: 1rem;
+	text-align: center;
+	color: $mPrimaryColor;
+}
+
+.topic {
+	border-radius: 0.5rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	padding: 0.5rem;
+
+	&-image {
+		width: 100%;
+		padding: 1rem;
+		margin: 0 auto;
+	}
+
+	&-info {
+		padding: 0.5rem 0;
+	}
+
+	&-name {
+		text-align: center;
+		font-size: 1rem;
+		color: $bSecondaryColor;
+		font-weight: bold;
+	}
+}
